@@ -1,0 +1,30 @@
+[gd_scene load_steps=2 format=3 uid="uid://cil12mbs4tnct"]
+
+[ext_resource type="Script" path="res://scripts/ui/start_button.gd" id="1_e3c7o"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="StartButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 356.0
+offset_top = 65.0
+offset_right = 780.0
+offset_bottom = 493.0
+text = "START"
+script = ExtResource("1_e3c7o")
+
+[node name="DieButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 49.0
+offset_top = 550.0
+offset_right = 1116.0
+offset_bottom = 620.0
+text = "DIE"
+
+[connection signal="pressed" from="StartButton" to="StartButton" method="_on_pressed"]
